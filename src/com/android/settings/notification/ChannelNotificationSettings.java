@@ -69,6 +69,7 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
     private static final String KEY_IMPORTANCE = "importance";
     private static final String KEY_ADVANCED = "advanced";
     private static final String KEY_LIGHT_ON_ZEN = "show_light_on_zen";
+    private static final String KEY_LIGHTS_CAT = "light_customization";
 
     private Preference mImportance;
     private RestrictedSwitchPreference mLights;
@@ -82,6 +83,9 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
     private EntityHeaderController mHeaderPref;
     private PreferenceGroup mAdvanced;
     private SwitchPreference mLightOnZen;
+    private PreferenceGroup mLightsCategory;
+    
+    private int mLedColor = 0;
 
     @Override
     public int getMetricsCategory() {
@@ -150,6 +154,7 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
         setupRingtone();
         setupImportance();
         mAdvanced = (PreferenceGroup) findPreference(KEY_ADVANCED);
+        mLightsCategory = (PreferenceGroup) findPreference(KEY_LIGHTS_CAT);
     }
 
     private void addHeaderPref() {
@@ -249,24 +254,35 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
                     Settings.System.putInt(mContext.getContentResolver(),
                         NOTIFICATION_LIGHT_PULSE, 1);
                 }
+                showLedPreview();
+                if (!lights) {
+                    mNm.forcePulseLedLight(-1, -1, -1);
+                }
                 return true;
             }
         });
         //light color pref
-        int color = (mChannel.getLightColor() != 0 ? mChannel.getLightColor() : 0x00FFFFFF);
+        int defaultLightColor = getResources().getColor(com.android.internal.R.color.config_defaultNotificationColor);
+        mCustomLight.setDefaultColor(defaultLightColor);
+        mLedColor = (mChannel.getLightColor() != 0 ? mChannel.getLightColor() : defaultLightColor);
         mCustomLight.setAlphaSliderEnabled(true);
-        mCustomLight.setNewPreviewColor(color);
+        mCustomLight.setNewPreviewColor(mLedColor);
         mCustomLight.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
-                int color = ((Integer) newValue).intValue();
-                mChannel.setLightColor(color);
+                mLedColor = ((Integer) newValue).intValue();
+                mChannel.setLightColor(mLedColor);
                 mBackend.updateChannel(mPkg, mUid, mChannel);
+                showLedPreview();
                 return true;
             }
         });
         //light on time pref
         int lightOn = mChannel.getLightOnTime();
+        int defaultLightOn = getResources().getInteger(
+                com.android.internal.R.integer.config_defaultNotificationLedOn);
+        mLightOnTime.setDefaultValue(defaultLightOn);
+        lightOn = lightOn == 0 ? defaultLightOn : lightOn;
         mLightOnTime.setValue(lightOn);
         mLightOnTime.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
@@ -274,11 +290,16 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
                 int val = (Integer) newValue;
                 mChannel.setLightOnTime(val);
                 mBackend.updateChannel(mPkg, mUid, mChannel);
+                showLedPreview();
                 return true;
             }
         });
         //light off time pref
         int lightOff = mChannel.getLightOffTime();
+        int defaultLightOff = getResources().getInteger(
+                com.android.internal.R.integer.config_defaultNotificationLedOff);
+        mLightOffTime.setDefaultValue(defaultLightOff);
+        lightOff = lightOff == 0 ? defaultLightOff : lightOff;
         mLightOffTime.setValue(lightOff);
         mLightOffTime.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
@@ -286,6 +307,7 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
                 int val = (Integer) newValue;
                 mChannel.setLightOffTime(val);
                 mBackend.updateChannel(mPkg, mUid, mChannel);
+                showLedPreview();
                 return true;
             }
         });
@@ -300,6 +322,37 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
                 return true;
             }
         });
+
+        showLedPreview();
+    }
+
+    private void showLedPreview() {
+        if (mChannel.shouldShowLights()) {
+            if (mLedColor == 0xFFFFFFFF) {
+                // i've no idea why atm but this is needed
+                mLedColor = 0xffffff;
+            }
+            mNm.forcePulseLedLight(
+                    mLedColor, mChannel.getLightOnTime(), mChannel.getLightOffTime());
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mNm.forcePulseLedLight(-1, -1, -1);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        mNm.forcePulseLedLight(-1, -1, -1);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mNm.forcePulseLedLight(-1, -1, -1);
     }
 
     private void setupVibrate() {
@@ -469,7 +522,7 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
         } else {
             setVisible(mAdvanced, checkCanBeVisible(NotificationManager.IMPORTANCE_MIN));
             setVisible(mImportance, checkCanBeVisible(NotificationManager.IMPORTANCE_MIN));
-            setVisible(mAdvanced, mLights, checkCanBeVisible(
+            setVisible(mLightsCategory, checkCanBeVisible(
                     NotificationManager.IMPORTANCE_DEFAULT) && canPulseLight());
             setVisible(mVibrate, checkCanBeVisible(NotificationManager.IMPORTANCE_DEFAULT));
             setVisible(mRingtone, checkCanBeVisible(NotificationManager.IMPORTANCE_DEFAULT));
