@@ -23,12 +23,12 @@
      <Preference
             android:key="wakelock_blocker"
             android:title="@string/wakelock_blocker_title"
-            android:fragment="com.nitrogen.settings.fragments.WakeLockBlocker" />
+            android:fragment="com.android.settings.rr.fragments.WakeLockBlocker" />
 
      <Preference
             android:id="@+id/alarm_blocker"
             android:title="@string/alarm_blocker"
-            android:fragment="com.nitrogen.settings.fragments.AlarmBlocker" />
+            android:fragment="com.android.settings.rr.fragments.AlarmBlocker" />
 
      <PreferenceScreen
             android:key="suspend_actions"
