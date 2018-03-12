@@ -107,7 +107,7 @@ public class WakeLockBlocker extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.NITROGEN_SETTINGS;
+        return MetricsProto.MetricsEvent.RESURRECTED;
     }
 
     @Override
