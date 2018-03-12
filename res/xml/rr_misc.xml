@@ -20,6 +20,16 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/rr_misc_title">
 
+     <Preference
+            android:key="wakelock_blocker"
+            android:title="@string/wakelock_blocker_title"
+            android:fragment="com.nitrogen.settings.fragments.WakeLockBlocker" />
+
+     <Preference
+            android:id="@+id/alarm_blocker"
+            android:title="@string/alarm_blocker"
+            android:fragment="com.nitrogen.settings.fragments.AlarmBlocker" />
+
      <PreferenceScreen
             android:key="suspend_actions"
             android:title="@string/screen_state_toggles_title"
