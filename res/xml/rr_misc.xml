@@ -20,23 +20,25 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/rr_misc_title">
 
-     <PreferenceScreen
+    <PreferenceScreen
             android:key="wakelock_blocker"
             android:title="@string/wakelock_blocker_title"
+	    android:summary="@string/wakelock_blocker_summary"
             android:fragment="com.android.settings.rr.fragments.WakeLockBlocker" />
 
-     <PreferenceScreen
+    <PreferenceScreen
             android:id="@+id/alarm_blocker"
             android:title="@string/alarm_blocker"
+	    android:summary="@string/alarm_blocker_summary"
             android:fragment="com.android.settings.rr.fragments.AlarmBlocker" />
 
-     <PreferenceScreen
+    <PreferenceScreen
             android:key="suspend_actions"
             android:title="@string/screen_state_toggles_title"
             android:icon="@drawable/rr_suspend_icon"
             android:fragment="com.android.settings.rr.SuspendActions" />
 
-     <PreferenceScreen
+    <PreferenceScreen
             android:title="@string/weather_title"
             android:summary="@string/weather_config_title"
             android:icon="@drawable/ic_settings_weather"
@@ -51,26 +53,13 @@
             android:summary="@string/system_app_remover_summary"
             android:fragment="com.android.settings.rr.fragments.SystemappRemover" />
 
-     <!-- IME Options -->
-     <PreferenceScreen
+    <!-- IME Options -->
+    <PreferenceScreen
             android:id="@+id/ime_settings"
             android:key="ime_settings"
             android:title="@string/keyboard_ime_title"
             android:icon="@drawable/rr_ime_settings"
             android:summary="@string/keyboard_ime_summury"
             android:fragment="com.android.settings.rr.fragments.IMESettings" />
-
-     <PreferenceScreen
-            android:key="rr_about"
-            android:layout="@layout/rr_about_layout"
-	   	  android:fragment="com.android.settings.rr.About" />
-
-     <!-- Updater -->
-     <PreferenceScreen
-            android:key="update_settings"
-            android:layout="@layout/rr_ota_layout">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.resurrection.ota"
-                    android:targetClass="com.resurrection.ota.MainActivity" />
      
 </PreferenceScreen>
