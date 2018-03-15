@@ -50,7 +50,7 @@ import java.util.Map;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 public class Headsup extends SettingsPreferenceFragment implements 
-    implements Preference.OnPreferenceClickListener, Preference.OnPreferenceChangeListener {
+    Preference.OnPreferenceClickListener, Preference.OnPreferenceChangeListener {
 
  
     private static final int DIALOG_BLACKLIST_APPS = 0;
