@@ -53,6 +53,7 @@ import com.android.settings.applications.PictureInPictureSettings;
 import com.android.settings.applications.ProcessStatsSummary;
 import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.applications.SpecialAccessSettings;
+import com.android.settings.applications.RunningServices;
 import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.VrListenerSettings;
 import com.android.settings.applications.WriteSettingsDetails;
@@ -267,6 +268,7 @@ public class SettingsGateway {
             MainSettingsLayout.class.getName(),
             MainSettings.class.getName(),
             NavigationBar.class.getName(),
+            RunningServices.class.getName(),
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
             PulseSettings.class.getName(),
@@ -319,6 +321,7 @@ public class SettingsGateway {
             Settings.PulseSettingsActivity.class.getName(),
             Settings.AboutSettingsActivity.class.getName(),
             Settings.PieControlSettingsActivity.class.getName(),
-            Settings.ExpandedDesktopSettingsActivity.class.getName()
+            Settings.ExpandedDesktopSettingsActivity.class.getName(),
+            Settings.DevRunningServicesActivity.class.getName()
     };
 }
