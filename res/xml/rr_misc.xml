@@ -38,6 +38,12 @@
             android:icon="@drawable/rr_suspend_icon"
             android:fragment="com.android.settings.rr.SuspendActions" />
 
+    <com.android.settings.rr.preferences.SystemSettingSwitchPreference
+	    android:key="mtp_dirty_hack"
+            android:title="@string/enable_mtp_dirtyhack_title"
+            android:summary="@string/enable_mtp_dirtyhack_summary"
+            android:defaultValue="true" />
+
     <PreferenceScreen
             android:title="@string/weather_title"
             android:summary="@string/weather_config_title"
