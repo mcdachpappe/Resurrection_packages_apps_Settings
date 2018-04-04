@@ -274,6 +274,10 @@
   <string name="device_hero2lte_codename" translatable="false">SM-G935F/FD/W8/S/K/L</string>
   <string name="device_hero2lte_maintainer" translatable="false">Ivan Meler</string>
 
+  <string name="device_zerofltexx" translatable="false">Galaxy S6</string>
+  <string name="device_zerofltexx_codename" translatable="false">SM-G920F/S/K/L</string>
+  <string name="device_zerofltexx_maintainer" translatable="false">Enes Uzun</string>
+
   <string name="device_dreamlte" translatable="false">Galaxy S8</string>
   <string name="device_dreamlte_codename" translatable="false">SM-G950F/FD/N</string>
   <string name="device_dreamlte_maintainer" translatable="false">Vaughn</string>
@@ -496,7 +500,7 @@
 
   <string name="device_osprey" translatable="false">Moto G 2015 </string>
   <string name="device_osprey_codename" translatable="false">Osprey</string>
-  <string name="device_osprey_maintainer" translatable="false">Pavan Jadhaw (Arcade)</string>
+  <string name="device_osprey_maintainer" translatable="false">Subins Mani</string>
 
   <string name="device_athene" translatable="false">Moto G4 Plus</string>
   <string name="device_athene_codename" translatable="false">athene</string>
