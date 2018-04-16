@@ -117,6 +117,10 @@
     <string name="rr_facebook_summary">Facebook community</string>
     <string name="rr_google_plus_title">Google</string>
     <string name="rr_google_plus_summary">Google+ community</string>
+    <string name="rr_pb_title">PitchBlack Theme</string>
+    <string name="rr_pb_summary">Official substratum theme of Resurrection Remix OS</string>
+    <string name="rr_twitter_title">Twitter</string>
+    <string name="rr_twitter_summary">Twitter account</string>
     <string name="maintainer_categorie_title">Official Devices</string>
     <string name="title_about">About</string>
     <string name="dev_categorie_title">Dev Tag</string>
@@ -240,6 +244,8 @@
     <string name="rr_header_title">Header</string>
     <string name="rr_power_panel_title">Power menu</string>
     <string name="rr_toast_title">Toast</string>
+    <string name="toast_text_color">Toast text color</string>
+    <string name="toast_icon_color">Toast icon color</string>
 
     <string name="recents_type_title">Recents type</string>
     <string name="recents_stock">Stock AOSP</string>
@@ -535,6 +541,9 @@
     <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
     <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
     <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
+
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qs_panel_alpha_title">Panel background transparency</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -1129,7 +1138,7 @@
     <string name="immersive_recents_statusbar">Statusbar only</string>
     <string name="immersive_recents_navbar">Navbar only</string>
     <string name="recents_icon_pack_title">Recents icon pack</string>
-    <string name="recents_icon_pack_summary">In recents view, hoose your app icon style using the icon packs included in your phone</string>
+    <string name="recents_icon_pack_summary">In recents view, Choose your app icon style using the icon packs included in your phone</string>
 
     <string name="show_4g_title">Show 4G</string>
     <string name="show_4g_summary">Show 4g instead of LTE in signal icons</string>
@@ -1230,6 +1239,10 @@
     <string name="force_ambient_for_media_on">Enabled</string>
     <string name="force_ambient_for_media_on_forced">Enabled and forced</string>
     <string name="force_ambient_for_media_on_forced_clean">Enabled and forced minimal</string>
+
+    <!-- Ambient display battery percentage -->
+    <string name="ambient_battery_percent_title">Battery percent on Ambient Display</string>
+    <string name="ambient_battery_percent_summary">Enable to show battery percent while dozing</string>
 
     <!-- Scrolling Cache -->
     <string name="pref_scrollingcache_title">Scrolling cache</string>
