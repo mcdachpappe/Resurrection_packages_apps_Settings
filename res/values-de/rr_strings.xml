@@ -488,6 +488,7 @@
   <string name="qs_rows_landscape_title">Kachel-Zeilen im Querformat</string>
   <string name="qs_columns_portrait_title">Kachel-Spalten im Hochformat</string>
   <string name="qs_columns_landscape_title">Kachel-Spalten im Querformat</string>
+  <string name="qs_panel_alpha_title">Kachel-Hintergrund Deckkraft</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Farbauswahl</string>
   <string name="press_color_to_apply">Zum Festlegen auf die Farbe unten tippen</string>
