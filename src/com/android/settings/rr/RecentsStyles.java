@@ -47,22 +47,21 @@ import java.util.ArrayList;
 
 public class RecentsStyles extends SettingsPreferenceFragment  implements Preference.OnPreferenceChangeListener {
 
-
     private static final String FAB_COLOR = "fab_button_color";
-    private static final String RECENTS_STYLE = "clear_recents_style";	
-    private static final String MEMBAR_COLOR = "mem_bar_color";	
+    private static final String RECENTS_STYLE = "clear_recents_style";
+    private static final String MEMBAR_COLOR = "mem_bar_color";
     private static final String MEM_TEXT_COLOR = "mem_text_color";
     private static final String CLEAR_BUTTON_COLOR = "clear_button_color";
     private static final String RECENTS_DATE_COLOR = "recents_date_color";
-    private static final String RECENTS_CLOCK_COLOR = "recents_clock_color";   
+    private static final String RECENTS_CLOCK_COLOR = "recents_clock_color";
     private static final String FAB_ANIM_STYLE = "fab_animation_style";
+    private static final String RECENTS_TYPE = "recents_layout_style";
 
     static final int DEFAULT = 0xffffffff;
-    static final int DEFAULT_BG_ICON = 0xff4285f4;	
-    static final int DEFAULT_BG_MEM_BAR = 0xff009688;	
-    static final int DEFAULT_BG_FAB = 0xff21272b;	
+    static final int DEFAULT_BG_ICON = 0xff4285f4;
+    static final int DEFAULT_BG_MEM_BAR = 0xff009688;
+    static final int DEFAULT_BG_FAB = 0xff21272b;
     private static final int MENU_RESET = Menu.FIRST;
-	
 
     private ColorPickerPreference mMemTextColor;
     private ColorPickerPreference mMemBarColor;
@@ -70,11 +69,10 @@ public class RecentsStyles extends SettingsPreferenceFragment  implements Prefer
     private ColorPickerPreference mfabColor;
     private ColorPickerPreference mClockColor;
     private ColorPickerPreference mDateColor;
-    
+
     private ListPreference mClearStyle;
-    private ListPreference mFabanimation;	
-
-
+    private ListPreference mFabanimation;
+    private ListPreference mRecentsType;
 
     @Override
     public int getMetricsCategory() {
@@ -87,6 +85,14 @@ public class RecentsStyles extends SettingsPreferenceFragment  implements Prefer
         addPreferencesFromResource(R.xml.recent_styles);
         ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
+
+	// recents type
+        mRecentsType = (ListPreference) findPreference(RECENTS_TYPE);
+        int style = Settings.System.getIntForUser(resolver,
+                Settings.System.RECENTS_LAYOUT_STYLE, 0, UserHandle.USER_CURRENT);
+        mRecentsType.setValue(String.valueOf(style));
+        mRecentsType.setSummary(mRecentsType.getEntry());
+        mRecentsType.setOnPreferenceChangeListener(this);
 	
         int intColor;
         String hexColor;
@@ -151,19 +157,27 @@ public class RecentsStyles extends SettingsPreferenceFragment  implements Prefer
                     Settings.System.RECENTS_DATE_COLOR, DEFAULT);
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mDateColor.setSummary(hexColor);
-        mDateColor.setNewPreviewColor(intColor);     
+        mDateColor.setNewPreviewColor(intColor);
 
-	    setHasOptionsMenu(true);
+	setHasOptionsMenu(true);
     }
 
-	@Override
+    @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        ContentResolver resolver = getActivity().getContentResolver();
-	    if (preference == mClearStyle) {
+	ContentResolver resolver = getActivity().getContentResolver();
+	
+	if (preference == mRecentsType) {
+            int style = Integer.valueOf((String) objValue);
+            int index = mRecentsType.findIndexOfValue((String) objValue);
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.RECENTS_LAYOUT_STYLE, style, UserHandle.USER_CURRENT);
+            mRecentsType.setSummary(mRecentsType.getEntries()[index]);
+        	return true;	    
+	} else if (preference == mClearStyle) {
             Settings.System.putInt(getContentResolver(), Settings.System.CLEAR_RECENTS_STYLE,
                     Integer.valueOf((String) newValue));
             mClearStyle.setValue(String.valueOf(newValue));
-            mClearStyle.setSummary(mClearStyle.getEntry());    
+            mClearStyle.setSummary(mClearStyle.getEntry());
         } else if (preference == mfabColor) {
                 String hex = ColorPickerPreference.convertToARGB(
                         Integer.valueOf(String.valueOf(newValue)));
@@ -172,7 +186,7 @@ public class RecentsStyles extends SettingsPreferenceFragment  implements Prefer
                 Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                         Settings.System.FAB_BUTTON_COLOR, intHex);
                 return true;
-        }  else if (preference == mMemTextColor) {
+        } else if (preference == mMemTextColor) {
                 String hex = ColorPickerPreference.convertToARGB(
                         Integer.valueOf(String.valueOf(newValue)));
                 preference.setSummary(hex);
@@ -216,11 +230,10 @@ public class RecentsStyles extends SettingsPreferenceFragment  implements Prefer
             Settings.System.putInt(getContentResolver(), Settings.System.FAB_ANIMATION_STYLE,
                     Integer.valueOf((String) newValue));
             mFabanimation.setValue(String.valueOf(newValue));
-            mFabanimation.setSummary(mFabanimation.getEntry());  
-	    }
-     return false;
+            mFabanimation.setSummary(mFabanimation.getEntry());
+	}
+    return false;
     }
-
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
