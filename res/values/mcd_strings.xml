@@ -12,6 +12,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- AOSP Recents Style -->
+    <string name="recents_type_title">Recents Layout</string>
+    <string name="recents_stock">Stock</string>
+    <string name="recents_grid">Grid</string>
+    <string name="recents_go">Android Go</string>
+
     <!-- Custom light color -->
     <string name="light_customization">Led light notification</string>
     <string name="custom_light_title">Light color</string>
