@@ -23,6 +23,14 @@
         android:key="recents_styles_1"
         android:title="@string/recents_styles_1" >
 
+        <ListPreference
+            android:key="recents_layout_style"
+            android:title="@string/recents_type_title"
+            android:dialogTitle="@string/recents_type_title"
+            android:entries="@array/recents_type_title_entries"
+            android:defaultValue="0"
+            android:entryValues="@array/recents_type_title_values"/>
+
 
         <ListPreference
             android:key="clear_recents_style"
