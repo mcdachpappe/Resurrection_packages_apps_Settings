@@ -3516,6 +3516,17 @@
             </intent-filter>
         </activity>
 
+	<service
+            android:exported="false"
+            android:enabled="true"
+            android:name="org.omnirom.omnigears.service.EventService" />
+        <receiver android:name="org.omnirom.omnigears.service.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
