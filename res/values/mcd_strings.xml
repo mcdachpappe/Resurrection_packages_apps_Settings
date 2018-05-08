@@ -72,6 +72,7 @@
     <string name="not_ready_summary">Resolving...</string>
     <string name="resolve_failed_summary">Resolving app failed</string>
     <string name="disabled_entry">Disabled</string>
+    <string name="action_save">Save</string>
 
     <!-- System Events -->
     <string name="event_service_settings_title">Events</string>
