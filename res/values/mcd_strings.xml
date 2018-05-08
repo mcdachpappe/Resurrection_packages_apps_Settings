@@ -67,6 +67,12 @@
     <string name="alarm_blocker_warning_title">Proceed with caution</string>
     <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
 
+    <!-- AppSelectListPreference -->
+    <string name="choose_app">Choose app</string>
+    <string name="not_ready_summary">Resolving...</string>
+    <string name="resolve_failed_summary">Resolving app failed</string>
+    <string name="disabled_entry">Disabled</string>
+
     <!-- System Events -->
     <string name="event_service_settings_title">Events</string>
     <string name="category_media_player_title">Media player</string>
