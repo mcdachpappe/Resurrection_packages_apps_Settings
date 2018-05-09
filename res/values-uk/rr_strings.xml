@@ -47,6 +47,7 @@
   <string name="battery_style_dotted_circle">Пунктирне коло</string>
   <string name="battery_style_big_circle">Велике коло</string>
   <string name="battery_style_big_dotted_circle">Велике пунктирне коло</string>
+  <string name="battery_style_square">Квадрат</string>
   <string name="battery_style_text">Текст</string>
   <string name="battery_style_hidden">Приховати</string>
   <string name="battery_style_category">Стиль батареї</string>
@@ -111,6 +112,10 @@
   <string name="rr_facebook_summary">Спільнота у Facebook</string>
   <string name="rr_google_plus_title">Googlе</string>
   <string name="rr_google_plus_summary">Спільнота у Google+</string>
+  <string name="rr_pb_title">Тема PitchBlack</string>
+  <string name="rr_pb_summary">Офіційні substratum теми для Resurrection Remix OS</string>
+  <string name="rr_twitter_title">Twitter</string>
+  <string name="rr_twitter_summary">Twitter акаунт</string>
   <string name="maintainer_categorie_title">Офіційні пристрої</string>
   <string name="title_about">Про прошивку</string>
   <string name="dev_categorie_title">Розробка і Підтримка</string>
@@ -279,6 +284,9 @@
   <string name="ticker_disabled">Без бігаючого рядка стану</string>
   <string name="ticker_enabled">Текст сповіщень</string>
   <string name="ticker_media_enabled">Текст сповіщень і музики</string>
+  <string name="ticker_animation_mode_title">Стиль анімації біжучої стрічки</string>
+  <string name="ticker_animation_mode_alpha_fade">Згасання</string>
+  <string name="ticker_animation_mode_scroll">Прокрутка</string>
   <!-- Heads up -->
   <string name="heads_up_title">Дозволити Спливаючі сповіщення</string>
   <string name="heads_up_summary_enabled">Спливаючі сповіщення увімкнені</string>
@@ -484,6 +492,8 @@
   <string name="qs_rows_landscape_title">Кількість рядків (ландшафт) </string>
   <string name="qs_columns_portrait_title">Кількість стовпців (портрет)</string>
   <string name="qs_columns_landscape_title">Кількість стовпців (ландшафт)</string>
+  <!-- QuickSettings Panel Transparency -->
+  <string name="qs_panel_alpha_title">Прозорість фону плиток</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Вибір кольору</string>
   <string name="press_color_to_apply">Натисніть на колір щоб застосувати його</string>
@@ -814,6 +824,10 @@
   <string name="pulse_custom_buttons_opacity_title">Smartbar кнопки непрозорість на Імпульсі</string>
   <string name="pulse_auto_color_title">Автоматичний Імпульсний колір</string>
   <string name="pulse_auto_color_summary">Колір залежить від обкладинки треку. Перевизначає прозорість \"Лава Лампи\" і суцільних ліній.</string>
+  <string name="fling_lavalamp_color_from">\"Лава ламп\" початок кольору</string>
+  <string name="fling_lavalamp_color_to">\"Лава ламп\" кінець кольору</string>
+  <string name="pulse_colors_reset_title">Скидання кольорів імпульсу</string>
+  <string name="pulse_colors_reset_message">Ви впевнені, що хочете повернути кольори за замовчуванням?</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Ширина панелі навігації</string>
   <string name="pulse_custom_div">Інтервал панелі навігації</string>
@@ -1118,6 +1132,9 @@
   <string name="force_ambient_for_media_on">Увімкнено</string>
   <string name="force_ambient_for_media_on_forced">Включено примусово</string>
   <string name="force_ambient_for_media_on_forced_clean">Включено примусово мінімально</string>
+  <!-- Ambient display battery percentage -->
+  <string name="ambient_battery_percent_title">Відсотки акумулятора на дисплеї навколишнього середовища</string>
+  <string name="ambient_battery_percent_summary">Увімкнути показник заряду акумулятора під час зупинки</string>
   <!-- Scrolling Cache -->
   <string name="pref_scrollingcache_title">Кеш прокручування</string>
   <string name="pref_scrollingcache_summary">Кеш прокручування може підвищити плавність прокручування за рахунок використання ОЗП</string>
@@ -1738,4 +1755,12 @@
   <!-- Notification guts kill app button -->
   <string name="notification_guts_kill_app_button_title">Кнопка завершення додатків</string>
   <string name="notification_guts_kill_app_button_summary">Показувати кнопку закриття програми при довгому натисненні на сповіщення</string>
+  <!-- Smart Pixels -->
+  <!-- QS footer icons -->
+  <!-- Recents Grid -->
+  <!-- Recents Lock Icon -->
+  <!-- Tiles animation style  -->
+  <!-- Running services -->
+  <!-- Force authorize substratum packages -->
+  <!-- Manage applications: show substratum overlays -->
 </resources>

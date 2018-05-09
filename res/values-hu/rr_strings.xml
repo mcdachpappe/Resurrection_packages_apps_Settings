@@ -47,6 +47,7 @@
   <string name="battery_style_dotted_circle">Pontozott kör</string>
   <string name="battery_style_big_circle">Nagy kör</string>
   <string name="battery_style_big_dotted_circle">Nagy pontozott kör</string>
+  <string name="battery_style_square">Négyzet</string>
   <string name="battery_style_text">Szöveg</string>
   <string name="battery_style_hidden">Rejtett</string>
   <string name="battery_style_category">Akkumulátor stílus</string>
@@ -111,6 +112,10 @@
   <string name="rr_facebook_summary">Facebook közösség</string>
   <string name="rr_google_plus_title">Google</string>
   <string name="rr_google_plus_summary">Google+ közösség</string>
+  <string name="rr_pb_title">PitchBlack téma</string>
+  <string name="rr_pb_summary">Hivatalos substratum téma a Resurrection Remix OS-hez</string>
+  <string name="rr_twitter_title">Twitter</string>
+  <string name="rr_twitter_summary">Twitter fiók</string>
   <string name="maintainer_categorie_title">Hivatalosan támogatott eszközök</string>
   <string name="title_about">Információ</string>
   <string name="dev_categorie_title">Fejlesztői címek</string>
@@ -279,6 +284,9 @@
   <string name="ticker_disabled">Nincs gördítés</string>
   <string name="ticker_enabled">Értesítés gördítése állapotsoron</string>
   <string name="ticker_media_enabled">Értesítés és zene gördítése állapotsoron</string>
+  <string name="ticker_animation_mode_title">Animáció stílusa</string>
+  <string name="ticker_animation_mode_alpha_fade">Halványuló</string>
+  <string name="ticker_animation_mode_scroll">Görgetés</string>
   <!-- Heads up -->
   <string name="heads_up_title">Lebegő értesítések megjelenítése</string>
   <string name="heads_up_summary_enabled">Lebegő értesítések engedélyezve</string>
@@ -400,15 +408,15 @@
   <!-- Carrier Label -->
   <string name="carrier_options">Megjelenés helyének kiválasztása</string>
   <string name="custom_carrier_label_title">Egyéni szolgáltató név</string>
-  <string name="custom_carrier_label_explain">Adjon meg egy egyéni címkét. Hagyja üresen a hálózati név használatához</string>
-  <string name="custom_carrier_label_notset">Egyéni címke jelenleg nincs beállítva</string>
-  <string name="show_carrier_title">Szolgáltatói címke</string>
+  <string name="custom_carrier_label_explain">Adjon meg egy egyéni feliratot. Ha üresen hagyja, a szolgáltatójának neve fog látszódni</string>
+  <string name="custom_carrier_label_notset">Egyéni felirat jelenleg nincs beállítva</string>
+  <string name="show_carrier_title">Szolgáltatói felirat</string>
   <string name="show_carrier_disabled">Letiltva</string>
   <string name="show_carrier_keyguard">Zárképernyő</string>
   <string name="show_carrier_statusbar">Állapotsor</string>
   <string name="show_carrier_enabled">Mindkettő</string>
-  <string name="status_bar_carrier_size">Szolgáltatói címke betűméret</string>
-  <string name="status_bar_carrier_font_style_title">Szolgáltatói címke betűtípusa</string>
+  <string name="status_bar_carrier_size">Szolgáltatói felirat mérete</string>
+  <string name="status_bar_carrier_font_style_title">Szolgáltatói felirat betűtípusa</string>
   <!-- Battery bar -->
   <string name="battery_bar_title">Akkumulátorsáv</string>
   <string name="battery_bar_position_title">Hely</string>
@@ -438,7 +446,7 @@
   <string name="ticker_screen_summary">Állapotsori gördítés stílusának testreszabása</string>
   <string name="status_bar_temperature_summary">Engedélyezheti vagy letilthatja az állapotsori hőmérsékletet és testreszabhatja stílusát</string>
   <string name="network_traffic_summary">Engedélyezheti vagy letilthatja a hálózati forgalom figyelését az állapotsoron és testreszabhatja a stílusát, a tevékenységi küszöbét és a mértékegységét</string>
-  <string name="carrier_summary">Engedélyezheti vagy letilthatja az állapotsori szolgáltatói címkét és testreszabhatja stílusát</string>
+  <string name="carrier_summary">Engedélyezheti vagy letilthatja az állapotsori szolgáltatói feliratot és testreszabhatja stílusát </string>
   <string name="rr_sb_gestures_summary">Engedélyezheti vagy letilthatja az állapotsoron használt kézmozdulatokat</string>
   <string name="breathing_notifications_summary">Lélegző hatású értesítések SMS, nem fogadott hívás és hangposta esetén</string>
   <string name="rr_trans_summary">Értesítési felület különböző elemeinek testreszabása, mint átlátszóság és körvonal</string>
@@ -484,6 +492,8 @@
   <string name="qs_rows_landscape_title">Csempesorok száma fekvő módban</string>
   <string name="qs_columns_portrait_title">Oszlopok száma álló helyzetben</string>
   <string name="qs_columns_landscape_title">Oszlopok száma fekvő módban</string>
+  <!-- QuickSettings Panel Transparency -->
+  <string name="qs_panel_alpha_title">Panel hátterének áttetszősége</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Színválasztó</string>
   <string name="press_color_to_apply">Érintse meg a színt az alkalmazáshoz</string>
@@ -814,6 +824,10 @@
   <string name="pulse_custom_buttons_opacity_title">Gombok átlátszósága a Pulse mellett</string>
   <string name="pulse_auto_color_title">Automatikus Pulse szín</string>
   <string name="pulse_auto_color_summary">Szinkronizálja a színeket az album borítójához. A Lávalámpát és a vonalak átlátszatlanságát felülbírálja.</string>
+  <string name="fling_lavalamp_color_from">Lávalámpa indítási szín</string>
+  <string name="fling_lavalamp_color_to">Lávalámpa vége szín</string>
+  <string name="pulse_colors_reset_title">Pulse színeinek visszaállítása</string>
+  <string name="pulse_colors_reset_message">Biztosan vissza szeretné állítani a színeket?</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Sáv szélessége</string>
   <string name="pulse_custom_div">Sáv térköz</string>
@@ -1010,7 +1024,7 @@
   <!-- Label of gesture name field in Rename gesture dialog box -->
   <string name="ga_gestures_rename_label">Gesztus név</string>
   <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
-  <string name="ga_gestures_error_loading">Nem tudom betölteni: %s. Győződjön meg róla, hogy a tárolóhely rendelkezésre áll e.</string>
+  <string name="ga_gestures_error_loading">%s nem tölthető be. Ellenőrizze, hogy a tárhely rendelkezésre áll e.</string>
   <string name="trigger_category">Indítási zóna</string>
   <string name="trigger_width_title">Indítási szélesség</string>
   <string name="trigger_width_summary">Indítási terület szélességének beállítása</string>
@@ -1118,6 +1132,9 @@
   <string name="force_ambient_for_media_on">Engedélyezve</string>
   <string name="force_ambient_for_media_on_forced">Engedélyezve és kényszerítve</string>
   <string name="force_ambient_for_media_on_forced_clean">Engedélyezve és minimálisan kényszerítve</string>
+  <!-- Ambient display battery percentage -->
+  <string name="ambient_battery_percent_title">Akkumulátor százalék a Környezeti kijelzőn</string>
+  <string name="ambient_battery_percent_summary">Engedélyezze az akkumulátor százalékos megjelenítését doze közben</string>
   <!-- Scrolling Cache -->
   <string name="pref_scrollingcache_title">Görgetési gyorsítótár</string>
   <string name="pref_scrollingcache_summary">A görgetési gyorsítótár javíthatja a görgetési teljesítményt a memória terhére</string>
@@ -1738,4 +1755,12 @@
   <!-- Notification guts kill app button -->
   <string name="notification_guts_kill_app_button_title">Alkalmazás leállítása gomb</string>
   <string name="notification_guts_kill_app_button_summary">Az értesítés hosszan nyomási menüjében az alkalmazás leállítása gomb megjelenítése</string>
+  <!-- Smart Pixels -->
+  <!-- QS footer icons -->
+  <!-- Recents Grid -->
+  <!-- Recents Lock Icon -->
+  <!-- Tiles animation style  -->
+  <!-- Running services -->
+  <!-- Force authorize substratum packages -->
+  <!-- Manage applications: show substratum overlays -->
 </resources>

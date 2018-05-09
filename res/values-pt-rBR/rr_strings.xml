@@ -47,6 +47,7 @@
   <string name="battery_style_dotted_circle">Círculo pontilhado</string>
   <string name="battery_style_big_circle">Círculo grande</string>
   <string name="battery_style_big_dotted_circle">Círculo pontilhado grande</string>
+  <string name="battery_style_square">Quadrado</string>
   <string name="battery_style_text">Texto</string>
   <string name="battery_style_hidden">Escondido</string>
   <string name="battery_style_category">Estilo do ícone da bateria</string>
@@ -111,6 +112,10 @@
   <string name="rr_facebook_summary">Comunidade no Facebook</string>
   <string name="rr_google_plus_title">Google</string>
   <string name="rr_google_plus_summary">Comunidade no Google+</string>
+  <string name="rr_pb_title">Tema PitchBlack</string>
+  <string name="rr_pb_summary">Tema substratum oficial da Resurrection Remix</string>
+  <string name="rr_twitter_title">Twitter</string>
+  <string name="rr_twitter_summary">Conta do Twitter</string>
   <string name="maintainer_categorie_title">Dispositivos oficiais</string>
   <string name="title_about">Sobre</string>
   <string name="dev_categorie_title">Desenvolvedor</string>
@@ -279,6 +284,9 @@
   <string name="ticker_disabled">Sem ticker</string>
   <string name="ticker_enabled">Notificação</string>
   <string name="ticker_media_enabled">Notificação e música</string>
+  <string name="ticker_animation_mode_title">Estilo da animação</string>
+  <string name="ticker_animation_mode_alpha_fade">Aparecer/desaparecer</string>
+  <string name="ticker_animation_mode_scroll">Rolagem</string>
   <!-- Heads up -->
   <string name="heads_up_title">Exibir Notificações pop-up</string>
   <string name="heads_up_summary_enabled">Notificações pop-up estão ativadas</string>
@@ -484,6 +492,8 @@ Densidade atual: <xliff:g name="count" example="520">%d</xliff:g> dpi</string>
   <string name="qs_rows_landscape_title">Número de linhas (paisagem)</string>
   <string name="qs_columns_portrait_title">Número de colunas (retrato)</string>
   <string name="qs_columns_landscape_title">Número de colunas (paisagem)</string>
+  <!-- QuickSettings Panel Transparency -->
+  <string name="qs_panel_alpha_title">Transparência do painel de fundo</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Selecionador de cores</string>
   <string name="press_color_to_apply">Toque na cor abaixo para aplicar</string>
@@ -814,6 +824,10 @@ Densidade atual: <xliff:g name="count" example="520">%d</xliff:g> dpi</string>
   <string name="pulse_custom_buttons_opacity_title">Opacidade dos botões da Smartbar no Pulse</string>
   <string name="pulse_auto_color_title">Cor automática</string>
   <string name="pulse_auto_color_summary">Cor de sincronização com a arte do álbum. Substitui a lâmpada da Lava e linhas de opacidade.</string>
+  <string name="fling_lavalamp_color_from">Cor inicial da lâmpada de lava</string>
+  <string name="fling_lavalamp_color_to">Cor final da lâmpada de lava</string>
+  <string name="pulse_colors_reset_title">Redefinir cores do pulse</string>
+  <string name="pulse_colors_reset_message">Tem certeza de que deseja redefinir todas as cores para o padrão?</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Largura da Barra Pulse</string>
   <string name="pulse_custom_div">Espaçamento da Barra Pulse</string>
@@ -1027,7 +1041,7 @@ Densidade atual: <xliff:g name="count" example="520">%d</xliff:g> dpi</string>
   <string name="immersive_recents_statusbar">Apenas Barra de status</string>
   <string name="immersive_recents_navbar">Apenas barra de navegação</string>
   <string name="recents_icon_pack_title">Pacote de ícones</string>
-  <string name="recents_icon_pack_summary">Na visualização de recentes, escolha o estilo do ícone do seu aplicativo usando os pacotes de ícones incluídos no seu telefone</string>
+  <string name="recents_icon_pack_summary">Na visualização recentes, escolha o estilo do seu ícone de aplicativo usando os pacotes de ícones incluídos em seu telefone</string>
   <string name="show_4g_title">Mostrar 4G</string>
   <string name="show_4g_summary">Mostrar 4G ao invés de LTE nos ícones de sinal</string>
   <!-- Circle app bar -->
@@ -1118,6 +1132,9 @@ Densidade atual: <xliff:g name="count" example="520">%d</xliff:g> dpi</string>
   <string name="force_ambient_for_media_on">Habilitado</string>
   <string name="force_ambient_for_media_on_forced">Habilitado e forçado</string>
   <string name="force_ambient_for_media_on_forced_clean">Habilitado e levemente forçado</string>
+  <!-- Ambient display battery percentage -->
+  <string name="ambient_battery_percent_title">Porcentagem da bateria na tela ambiente</string>
+  <string name="ambient_battery_percent_summary">Mostrar a porcentagem da bateria no modo doze</string>
   <!-- Scrolling Cache -->
   <string name="pref_scrollingcache_title">Cache de rolagem</string>
   <string name="pref_scrollingcache_summary">O cache de rolagem pode melhorar a performance de rolagem ao custo de memória</string>
@@ -1738,4 +1755,12 @@ Densidade atual: <xliff:g name="count" example="520">%d</xliff:g> dpi</string>
   <!-- Notification guts kill app button -->
   <string name="notification_guts_kill_app_button_title">Botão de encerrar aplicativo</string>
   <string name="notification_guts_kill_app_button_summary">Mostrar um botão para finalizar o aplicativo ao tocar e segurar em uma notificação</string>
+  <!-- Smart Pixels -->
+  <!-- QS footer icons -->
+  <!-- Recents Grid -->
+  <!-- Recents Lock Icon -->
+  <!-- Tiles animation style  -->
+  <!-- Running services -->
+  <!-- Force authorize substratum packages -->
+  <!-- Manage applications: show substratum overlays -->
 </resources>

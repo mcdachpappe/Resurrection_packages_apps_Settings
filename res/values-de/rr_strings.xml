@@ -47,6 +47,7 @@
   <string name="battery_style_dotted_circle">Gepunkteter Kreis</string>
   <string name="battery_style_big_circle">Großer Kreis</string>
   <string name="battery_style_big_dotted_circle">Großer gepunkteter Kreis</string>
+  <string name="battery_style_square">Quadrat</string>
   <string name="battery_style_text">Text</string>
   <string name="battery_style_hidden">Ausgeblendet</string>
   <string name="battery_style_category">Akku Stil</string>
@@ -90,7 +91,7 @@
   <string name="keyboard_rotation_dialog">Diese Funktion erzwingt die temporäre Aktivierung der automatischen Drehung während die Tastatur aktiv ist. Dies hat keine Auswirkung wenn die automatische Drehung bereits aktiviert ist.</string>
   <string name="show_enter_key_title">Eingabetaste anzeigen</string>
   <string name="show_enter_key_summary">Zwingt die Tastatur zur Darstellung der Eingabetaste anstelle der Emoticon-Taste</string>
-  <string name="keyboard_ime_title">IME-Einstellungen</string>
+  <string name="keyboard_ime_title">Eingabe-EInstellungen</string>
   <string name="keyboard_ime_summury">Erweiterte Eingabe-Einstellungen</string>
   <string name="ime_switcher_notify">Eingabemethoden-Benachrichtigung</string>
   <string name="ime_switcher_notify_summary">Eingabemethoden-Benachrichtigung anzeigen</string>
@@ -111,6 +112,10 @@
   <string name="rr_facebook_summary">Facebook Community</string>
   <string name="rr_google_plus_title">Google</string>
   <string name="rr_google_plus_summary">Google+ Community</string>
+  <string name="rr_pb_title">PitchBlack Design</string>
+  <string name="rr_pb_summary">Offizielles Substratum Theme Resurrection Remix OS</string>
+  <string name="rr_twitter_title">Twitter</string>
+  <string name="rr_twitter_summary">Twitter-Konto</string>
   <string name="maintainer_categorie_title">Offizielle Geräte</string>
   <string name="title_about">Über</string>
   <string name="dev_categorie_title">Entwickler-Tag</string>
@@ -279,6 +284,9 @@
   <string name="ticker_disabled">Kein Ticker</string>
   <string name="ticker_enabled">Benachrichtigungsticker</string>
   <string name="ticker_media_enabled">Benachrichtigungs- und Musikticker</string>
+  <string name="ticker_animation_mode_title">Ticker Animationsstil</string>
+  <string name="ticker_animation_mode_alpha_fade">Überblenden</string>
+  <string name="ticker_animation_mode_scroll">Scrollen</string>
   <!-- Heads up -->
   <string name="heads_up_title">Erlaube Heads-Up Benachrichtigungen</string>
   <string name="heads_up_summary_enabled">Heads-Up-Benachrichtigungen aktiviert</string>
@@ -484,6 +492,8 @@
   <string name="qs_rows_landscape_title">Kachel-Zeilen im Querformat</string>
   <string name="qs_columns_portrait_title">Kachel-Spalten im Hochformat</string>
   <string name="qs_columns_landscape_title">Kachel-Spalten im Querformat</string>
+  <!-- QuickSettings Panel Transparency -->
+  <string name="qs_panel_alpha_title">Kachel Hintergrundtransparenz</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Farbauswahl</string>
   <string name="press_color_to_apply">Zum Festlegen auf die Farbe unten tippen</string>
@@ -814,6 +824,10 @@
   <string name="pulse_custom_buttons_opacity_title">Deckkraft der SmartBar Buttons bei Pulse</string>
   <string name="pulse_auto_color_title">Automatische Farbauswahl bei Pulse</string>
   <string name="pulse_auto_color_summary">Farbe mit Album-Arts synchronisieren. Überschreibt Lavalampe und Linien-Deckkraft.</string>
+  <string name="fling_lavalamp_color_from">Anfangsfarbe der Lavalampe</string>
+  <string name="fling_lavalamp_color_to">Endfarbe der Lavalampe</string>
+  <string name="pulse_colors_reset_title">Komplette Farbwahl zurücksetzen</string>
+  <string name="pulse_colors_reset_message">Sind Sie sicher, dass Sie die Farben auf Standard zurücksetzen möchten?</string>
   <!-- Pulse config -->
   <string name="pulse_custom_dimen">Balken-Breite</string>
   <string name="pulse_custom_div">Balkenabstände</string>
@@ -1118,6 +1132,9 @@
   <string name="force_ambient_for_media_on">Aktiviert</string>
   <string name="force_ambient_for_media_on_forced">Aktiviert und erzwungen</string>
   <string name="force_ambient_for_media_on_forced_clean">Aktiviert und minimal erzwungen</string>
+  <!-- Ambient display battery percentage -->
+  <string name="ambient_battery_percent_title">Batteriestatus im Ambient Display</string>
+  <string name="ambient_battery_percent_summary">Aktivieren, um den Batterie-Prozentsatz im Doze-Modus anzuzeigen</string>
   <!-- Scrolling Cache -->
   <string name="pref_scrollingcache_title">Scrolling Cache</string>
   <string name="pref_scrollingcache_summary">Scrolling-Cache kann die Scroll-Leistung auf Kosten des Arbeitsspeichers verbessern</string>
@@ -1715,10 +1732,16 @@
   <string name="less_notification_sounds_title">Smarte Benachrichtigungstöne</string>
   <string name="less_notification_sounds_summary">Die Benachrichtigungs-Töne einer App nur einmal pro festgelegtem Zeitraum wiedergeben</string>
   <string name="less_notification_sounds_default">Apps-Standardeinstellung</string>
+  <string name="less_notification_sounds_3s">Alle 3 Sekunden</string>
+  <string name="less_notification_sounds_5s">Alle 5 Sekunden</string>
   <string name="less_notification_sounds_10s">Alle 10 Sekunden</string>
+  <string name="less_notification_sounds_15s">Alle 15 Sekunden</string>
   <string name="less_notification_sounds_30s">Alle 30 Sekunden</string>
   <string name="less_notification_sounds_1m">Jede Minute</string>
   <string name="less_notification_sounds_2m">Alle 2 Minuten</string>
+  <string name="less_notification_sounds_5m">Alle 5 Minuten</string>
+  <string name="less_notification_sounds_10m">Alle 10 Minuten</string>
+  <string name="less_notification_sounds_20m">Alle 20 Minuten</string>
   <!-- Screenshot -->
   <string name="screenshot_type_title">Screenshot-Typ</string>
   <string name="screenshot_type_fullscreen">Vollbild Screenshot</string>
@@ -1737,5 +1760,13 @@
   <string name="custom_seekbar_default_text">Standard</string>
   <!-- Notification guts kill app button -->
   <string name="notification_guts_kill_app_button_title">\"App beenden\" – Taste</string>
-  <string name="notification_guts_kill_app_button_summary">Zeige eine Taste zum Beenden der App im Menü beim Gedrückthalten der Benachrichtigung</string>
+  <string name="notification_guts_kill_app_button_summary">Zeige eine Taste zum Beenden der App durch Gedrückthalten der Benachrichtigung</string>
+  <!-- Smart Pixels -->
+  <!-- QS footer icons -->
+  <!-- Recents Grid -->
+  <!-- Recents Lock Icon -->
+  <!-- Tiles animation style  -->
+  <!-- Running services -->
+  <!-- Force authorize substratum packages -->
+  <!-- Manage applications: show substratum overlays -->
 </resources>
