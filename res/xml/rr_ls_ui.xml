@@ -34,7 +34,7 @@
 
     <PreferenceCategory
         android:key="ls_clock_menu"
-        android:title="@string/mcd_clock_customization">
+        android:title="@string/mcd_clock_customization" >
 
 	    <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
 		android:key="hide_lockscreen_clock"
@@ -74,7 +74,7 @@
 
     <PreferenceCategory
         android:key="ls_date_menu"
-        android:title="@string/mcd_date_customization">
+        android:title="@string/mcd_date_customization" >
 
 	    <com.android.settings.rr.Preferences.SystemSettingSwitchPreference
 		android:key="hide_lockscreen_date"
