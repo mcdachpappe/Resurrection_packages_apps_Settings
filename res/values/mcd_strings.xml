@@ -29,22 +29,35 @@
     <string name="lock_clock_font_title">Clock font options</string>
     <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>
     <string name="lock_clock_font_dialog_title">Select lock clock font</string>
-    <string name="lock_clock_font_stock">System Normal (default)</string>
-    <string name="lock_clock_font_bold">System Bold</string>
-    <string name="lock_clock_font_italic">System Italic</string>
-    <string name="lock_clock_font_bold_italic">System Bold Italic</string>
-    <string name="lock_clock_font_light">System Light Normal</string>
-    <string name="lock_clock_font_light_italic">System Light Italic</string>
-    <string name="lock_clock_font_condensed_normal">System Condensed</string>
-    <string name="lock_clock_font_condensed_italic">System Condensed Italic</string>
-    <string name="lock_clock_font_condensed_bold">System Condensed Bold</string>
-    <string name="lock_clock_font_condensed_bold_italic">System Condensed Bold Italic</string>
-    <string name="lock_clock_font_medium_normal">System Medium</string>
-    <string name="lock_clock_font_medium_italic">System Medium Italic</string>
-    <string name="lock_clock_font_gobold" translatable="false">GoBold Light</string>
-    <string name="lock_clock_font_roadrage" translatable="false">Road Rage</string>
-    <string name="lock_clock_font_snowstorm" translatable="false">Snowstorm</string>
-    <string name="lock_clock_font_googlesans" translatable="false">Google Sans</string>
+    <string name="lock_clock_font_stock">Normal (default)</string>
+    <string name="lock_clock_font_bold">Bold</string>
+    <string name="lock_clock_font_italic">Italic</string>
+    <string name="lock_clock_font_bold_italic">Bold Italic</string>
+    <string name="lock_clock_font_light_italic">Light Italic</string>
+    <string name="lock_clock_font_thin_italic">Thin Italic</string>
+    <string name="lock_clock_font_light">Light</string>
+    <string name="lock_clock_font_thin">Thin</string>
+    <string name="lock_clock_font_condensed_normal">Condensed</string>
+    <string name="lock_clock_font_condensed_italic">Condensed Italic</string>
+    <string name="lock_clock_font_condensed_bold">Condensed Bold</string>
+    <string name="lock_clock_font_condensed_bold_italic">Condensed Bold Italic</string>
+    <string name="lock_clock_font_condensed_light">Condensed Light</string>
+    <string name="lock_clock_font_condensed_light_italic">Condensed Light Italic</string> 
+    <string name="lock_clock_font_medium_normal">Medium</string>
+    <string name="lock_clock_font_medium_italic">Medium Italic</string>
+    <string name="lock_clock_font_black">Black</string>
+    <string name="lock_clock_font_black_italic">Black Italic</string> 
+    <string name="lock_clock_font_dancingscript">DancingScript</string>
+    <string name="lock_clock_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="lock_clock_font_comingsoon">ComingSoon</string>
+    <string name="lock_clock_font_notoserif">NotoSerif Normal</string>
+    <string name="lock_clock_font_notoserif_italic">NotoSerif Italic</string>
+    <string name="lock_clock_font_notoserif_bold">NotoSerif Bold</string>
+    <string name="lock_clock_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
+    <string name="lock_clock_font_gobold">GoBold Light</string>
+    <string name="lock_clock_font_roadrage">Road Rage</string>
+    <string name="lock_clock_font_snowstorm">Snowstorm</string>
+    <string name="lock_clock_font_googlesans">Google Sans</string>
     <string name="lock_clock_font_themeable">Themeable (or VCR OSD Mono)</string>
 
     <string name="lockdate_font_size_title">Date font size</string>
