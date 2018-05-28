@@ -21,6 +21,10 @@
     <string name="value_equals_default">default</string>
     <string name="show_light_on_zen_title">Blink during Do Not Disturb</string>
 
+    <!-- Lockscreen customization -->
+    <string name="mcd_clock_customization">Clock customization</string>
+    <string name="mcd_date_customization">Date customization</string>
+
     <!-- Lock Clock Fonts -->
     <string name="lock_clock_font_title">Clock font options</string>
     <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>
