@@ -21,10 +21,37 @@
     <string name="value_equals_default">default</string>
     <string name="show_light_on_zen_title">Blink during Do Not Disturb</string>
 
-    <!-- Hide Lockscreen clock, date, & alarm -->
+    <!-- Lock Clock Fonts -->
+    <string name="lock_clock_font_title">Clock font options</string>
+    <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>
+    <string name="lock_clock_font_dialog_title">Select lock clock font</string>
+    <string name="lock_clock_font_stock">System Normal (default)</string>
+    <string name="lock_clock_font_bold">System Bold</string>
+    <string name="lock_clock_font_italic">System Italic</string>
+    <string name="lock_clock_font_bold_italic">System Bold Italic</string>
+    <string name="lock_clock_font_light">System Light Normal</string>
+    <string name="lock_clock_font_light_italic">System Light Italic</string>
+    <string name="lock_clock_font_condensed_normal">System Condensed</string>
+    <string name="lock_clock_font_condensed_italic">System Condensed Italic</string>
+    <string name="lock_clock_font_condensed_bold">System Condensed Bold</string>
+    <string name="lock_clock_font_condensed_bold_italic">System Condensed Bold Italic</string>
+    <string name="lock_clock_font_medium_normal">System Medium</string>
+    <string name="lock_clock_font_medium_italic">System Medium Italic</string>
+    <string name="lock_clock_font_gobold" translatable="false">GoBold Light</string>
+    <string name="lock_clock_font_roadrage" translatable="false">Road Rage</string>
+    <string name="lock_clock_font_snowstorm" translatable="false">Snowstorm</string>
+    <string name="lock_clock_font_googlesans" translatable="false">Google Sans</string>
+    <string name="lock_clock_font_themeable">Themeable (or VCR OSD Mono)</string>
+
+    <string name="lockdate_font_size_title">Date font size</string>
+    <string name="lockclock_font_size_title">Clock font size</string>
+
+    <string name="lock_date_font_title">Date font options</string>
+    <string name="lock_date_font_summary">Change the default font of the lockscreen date widget</string>
+    <string name="lock_date_font_dialog_title">Select lock date font</string>
+
+    <!-- DU Lock Clock Style -->
     <string name="lockscreen_items_other">Other</string>
-    <string name="hide_lockscreen_clock_title">Clock widget</string>
-    <string name="hide_lockscreen_clock_summary">Change the clock widget\'s visibility</string>
     <string name="lockscreen_clock_selection_title">Clock style</string>
     <string name="lockscreen_clock_selection_digital">Default</string>
     <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
@@ -32,14 +59,10 @@
     <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
-    <string name="hide_lockscreen_date_title">Date widget</string>
-    <string name="hide_lockscreen_date_summary">Change the date\'s visibility underneath the clock widget</string>
     <string name="lockscreen_date_selection_title">Date style</string>
     <string name="lockscreen_date_selection_default">Default</string>
     <string name="lockscreen_date_selection_str_box">Semi-transparent box</string>
     <string name="lockscreen_date_selection_str_round">Semi-transparent box (round)</string>
-    <string name="hide_lockscreen_alarm_title">Alarm text</string>
-    <string name="hide_lockscreen_alarm_summary">Change the alarm text\'s visibility underneath the clock widget</string>
 
     <!-- Heads up timeout -->
     <string name="heads_up_time_out_title">Time out</string>
